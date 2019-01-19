@@ -5,6 +5,8 @@
   <property name="src.dir" location="src"/>
   <property name="dist.dir" location="../../dist"/>
   <property name="www.dir" location="../../www"/>
+  <property name="java.target" value="1.8" />
+  <property name="java.source" value="1.8" />
 
   <target name="jar" description="build a new version of phonegap-nfc.jar">
     <jar destfile="${dist.dir}/phonegap-nfc-${platform}.jar" basedir="${src.dir}"/>
