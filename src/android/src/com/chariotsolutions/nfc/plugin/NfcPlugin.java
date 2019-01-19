@@ -77,8 +77,8 @@ public class NfcPlugin extends CordovaPlugin implements NfcAdapter.OnNdefPushCom
     private static final String STATUS_NDEF_PUSH_DISABLED = "NDEF_PUSH_DISABLED";
 
     private static final String TAG = "NfcPlugin";
-    private final List<IntentFilter> intentFilters = new ArrayList<>();
-    private final ArrayList<String[]> techLists = new ArrayList<>();
+    private final List<IntentFilter> intentFilters = new ArrayList<IntentFilter>();
+    private final ArrayList<String[]> techLists = new ArrayList<String[]>();
 
     private NdefMessage p2pMessage = null;
     private PendingIntent pendingIntent = null;
